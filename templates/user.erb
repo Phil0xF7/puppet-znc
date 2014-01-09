@@ -1,0 +1,21 @@
+<User <%= @username %>>
+        Pass       = <%= @password %>
+        Admin      = <%= @admin %>
+        Nick       = <%= @nickd %>
+        AltNick    = <%= @alt_nickd %>
+        Ident      = <%= @identd %>
+        Realname   = <%= @realname %>
+        Buffer     = <%= @buffer %>
+        KeepBuffer = <%= @keepbuffer %>
+        ChanModes  = <%= @modes %>
+
+<% if @user_mod -%>
+  <% Array(@user_mod).each do |mod| %>
+        LoadModule = <%= mod -%>
+  <% end %>
+<% end -%>
+
+<%= scope.function_template(['znc/_network.erb']) %>
+
+<%= scope.function_template(['znc/_channel.erb']) %>
+</User>

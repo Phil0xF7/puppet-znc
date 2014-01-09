@@ -1,0 +1,19 @@
+<% if @chan_name -%>
+        <Chan <%= @chan_name %>>
+<% if @chan_clearbuffer -%>
+        KeepBuffer = <%= @chan_keepbuffer %>
+<% end -%>
+<% if @chan_buffer -%>
+        Buffer = <%= @chan_buffer %>
+<% end -%>
+<% if @chan_detach -%>
+        Detached = <%= @chan_detach %>
+<% end -%>
+<% if @chan_key -%>
+        Key = <%= @chan_key %>
+<% end -%>
+<% if @chan_modes -%>
+        Modes = <%= @chan_modes %>
+<% end -%>
+        </Chan>
+<% end -%>
