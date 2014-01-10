@@ -32,3 +32,4 @@ Admin install with modules/network/channel
 This module has been tested on:
 
 * Debian 6/7
+* Ubuntu 12.04
