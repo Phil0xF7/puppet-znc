@@ -31,4 +31,4 @@ Admin install with modules/network/channel
 ## Limitations
 This module has been tested on:
 
-* Debian 7
+* Debian 6/7
